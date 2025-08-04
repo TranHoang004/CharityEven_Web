@@ -1,0 +1,142 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container2 {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007BFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.Head{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    height: auto; 
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.section h3 {
+    color: #FF8844;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section p {
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+  /* Table activities */
+
+
+.details {
+    display: none;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Button register */
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.Register {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.register-button {
+    display: inline-block;
+    background-color: #FF8844;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #ff9933;
+}
+
+.timeline {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.timeline h4 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 5px solid #FF8844;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

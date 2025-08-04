@@ -1,0 +1,161 @@
+.hero-image {
+    background-image: url('pictures/Participation/cover.jpg');
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h3 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section h3 {
+    color: #007BFF;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.section button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input select {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.phone-input input[type="tel"] {
+    width: 70%;
+}
+
+.form-actions {
+    text-align: right;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button:hover {
+    background-color: #0056b3;
+}
+
+.form-actions .cancel {
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+.form-actions .cancel:hover {
+    background-color: #5a6268;
+}
+
+#output {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#output p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#output p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}

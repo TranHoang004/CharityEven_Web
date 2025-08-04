@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vFormStyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="pictures/Logo.png" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-details.html">Event Details</a></li>
+                    <li><a href="general-info.html">General Info</a></li>
+                    <li><a href="participation-info.html">Participation Info</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="visitor-form.html">Visitor Form</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div id="confirmation-message" style="display: none;"></div>
+        <div class="form-container">
+            <h2 style="color: #007BFF;">Visitor Form</h2>
+            <form id="enquiryForm" onsubmit="return validateForm()">
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="visitor-first-name">Visitor's Name *</label>
+                    <input type="text" id="visitor-first-name" name="visitor-first-name" placeholder="First Name" required>
+                    <input type="text" id="visitor-last-name" name="visitor-last-name" placeholder="Last Name" required>
+                </div>
+                <!-- BIRTHDAY -->
+        <div class="form-group">
+                    <label for="Your Birthday">Your Birthday: *</label>
+                    <input type="date" id="Your Birthday" name="Your Birthday" required>
+                </div>
+                <!-- MAIL -->
+                <div class="form-group">
+                    <label for="personal-email">Personal Email *</label>
+                    <input type="email" id="personal-email" name="personal-email" placeholder="example@example.com" required>
+                </div>
+                <!-- PHONE -->
+        <div class="form-group">
+            <label for="mobile-phone">Mobile Phone Number *</label>
+            <div class="phone-input">
+                <select id="country-code" name="country-code" required>
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="+60">Malaysia (+60)</option>
+                    <option value="+62">Indonesia (+62)</option>
+                    <option value="+63">Philippines (+63)</option>
+                    <option value="+65">Singapore (+65)</option>
+                    <option value="+66">Thailand (+66)</option>
+                    <option value="+84">Vietnam (+84)</option>
+                    <option value="+855">Cambodia (+855)</option>
+                    <option value="+856">Laos (+856)</option>
+                    <option value="+951">Myanmar (+951)</option>
+                    <option value="+673">Brunei (+673)</option>
+                    <option value="+674">East Timor (+674)</option>
+                </select>
+                <input type="tel" id="mobile-phone" name="mobile-phone" placeholder="000-0000" required>
+            </div>
+        </div>
+
+                <div class="form-group">
+                    <label for="notes">Notes about the event</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+            <br>
+            <div id="output" class="mt-4 p-4 bg-gray-200 rounded">
+                <div class="output-container">
+                    <p id="output-name"></p>
+                    <p id="output-birthday"></p>
+                    <p id="output-email"></p>
+                    <p id="output-phone"></p>
+                    <p id="output-notes"></p>
+                </div>
+            </div>
+            <script src="script.js"></script>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <h2 style="color: black;">SPORT</h2>
+                        <p>22BOIT02 Company - 2254030068 </p>
+                        <p>Saigon Campus: 475A Dien Bien Phu, Ward 25, Binh Thanh District, HCMC</p>
+                    </div>
+        
+                    <div class="footer-social">
+                        <a href="#"><img src="pictures/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="pictures/instagram-icon.png" alt="Instagram"></a>
+                        <button class="contact-button" onclick="location.href='about-us.html'">Contact Us</button>
+                    </div>
+        
+                    <div class="footer-sponsors">
+                        <h3>Our Sponsors</h3>
+                        <div class="sponsor-logos1">
+                            <a href="https://www.timeoutdoors.com/"><img src="pictures/logoNTT.png" alt="Sponsor 1"></a>
+                            <a href="https://coopah.com/"><img src="pictures/logoNTT4.png" alt="Sponsor 4"></a>
+        
+                            </div>
+                        <div class="sponsor-logos">
+                            <a href="https://www.ans.co.uk/our-sustainability/"><img src="pictures/logoNTT1.jpg" alt="Sponsor 2"></a>
+                            <a href="https://www.theoia.co.uk/"><img src="pictures/logoNTT2.jpg" alt="Sponsor 3"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

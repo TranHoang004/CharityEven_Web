@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eventStyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="pictures/Logo.png" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-details.html">Event Details</a></li>
+                    <li><a href="general-info.html">General Info</a></li>
+                    <li><a href="participation-info.html">Participation Info</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="visitor-form.html">Visitor Form</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="container2">
+            <img src="pictures/header copy.png" class="Head">
+    
+            <div class="section">
+                <h2>Event Details</h2>
+                <p><strong>Date:</strong> 11th October 2024</p>
+                <p><strong>Location:</strong> <a href="https://s.net.vn/jLe7" >Exhibition and Convention Center (SECC), Ho Chi Minh City</a></p>
+            </div>
+    
+            <div class="section">
+                <h2>About the Event</h2>
+                <p>Welcome to the official website of Charity Run 2024! This charity run event aims to raise funds to 
+                    support community activities and promote health awareness. Join us and make a difference!</p>
+            </div>
+    
+            <div class="section timeline">
+                <h2>Event Schedule</h2>
+                <h4>October 11th, 2024</h4>
+                <ul>
+                    <li>7:00 AM: Reception and Registration</li>
+                    <li>8:00 AM: Warm-up and Instructions</li>
+                    <li>8:30 AM: Start Running - 5km Run</li>
+                    <li>9:30 AM: Start Running - 10km Run</li>
+                    <li>10:00 AM: Start Running - Family Run</li>
+                    <li>10:30 AM: Finish and Award Ceremony</li>
+                    <li>11:00 AM: Light Refreshments and Networking</li>
+                </ul>
+            </div>
+    
+
+        <div class="section">
+            <h2>Activities</h2>
+            <table>
+                <tr>
+                    <th>Activity</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>5km Run</td>
+                    <td>Open to all ages and skill levels</td>
+                    <td><span class="toggle-button" onclick="toggleDetails('details-5km', this)">Show Details</span></td>
+                </tr>
+                <tr id="details-5km" class="details">
+                    <td colspan="3">
+                        <strong>Criteria:</strong> Open to all ages and skill levels.<br>
+                        <strong>Participation Fee:</strong> $20 per person.<br>
+                        <strong>Prizes:</strong> Medals for top 3 finishers, participation certificates for all.
+                    </td>
+                </tr>
+                <tr>
+                    <td>10km Run</td>
+                    <td>Challenge for running enthusiasts</td>
+                    <td><span class="toggle-button" onclick="toggleDetails('details-10km', this)">Show Details</span></td>
+                </tr>
+                <tr id="details-10km" class="details">
+                    <td colspan="3">
+                        <strong>Criteria:</strong> Challenge for running enthusiasts.<br>
+                        <strong>Participation Fee:</strong> $30 per person.<br>
+                        <strong>Prizes:</strong> Trophies for top 3 finishers, participation medals for all.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Family Run</td>
+                    <td>Fun activity for the whole family</td>
+                    <td><span class="toggle-button" onclick="toggleDetails('details-family', this)">Show Details</span></td>
+                </tr>
+                <tr id="details-family" class="details">
+                    <td colspan="3">
+                        <strong>Criteria:</strong> Fun activity for the whole family.<br>
+                        <strong>Participation Fee:</strong> $50 per family.<br>
+                        <strong>Prizes:</strong> Family gift packs for top 3 families, participation ribbons for all.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="Register">
+            <a href="participation-info.html#registration-form" class="register-button">Register Now!</a>
+        </div>
+    
+            <div class="section contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, please contact us at <a href="mailto:info@charityrun2024.com">info@charityrun2024.com</a>
+                     or call us at 0984-796-567.</p>
+            </div>
+    
+            <div class="section sponsors">
+                <h2>Sponsorship and Support</h2>
+                <p>We greatly appreciate the support from our sponsors and volunteers. 
+                    If you wish to sponsor or volunteer, please contact us at 
+                    <a href="mailto:sponsor@charityrun2024.com">sponsor@charityrun2024.com</a>.</p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 style="color: black;">SPORT</h2>
+                <p>22BOIT02 Company - 2254030068 </p>
+                <p>Saigon Campus: 475A Dien Bien Phu, Ward 25, Binh Thanh District, HCMC</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><img src="pictures/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="pictures/instagram-icon.png" alt="Instagram"></a>
+                <button class="contact-button" onclick="location.href='about-us.html'">Contact Us</button>
+            </div>
+
+            <div class="footer-sponsors">
+                <h3>Our Sponsors</h3>
+                <div class="sponsor-logos1">
+                    <a href="https://www.timeoutdoors.com/"><img src="pictures/logoNTT.png" alt="Sponsor 1"></a>
+                    <a href="https://coopah.com/"><img src="pictures/logoNTT4.png" alt="Sponsor 4"></a>
+
+                    </div>
+                <div class="sponsor-logos">
+                    <a href="https://www.ans.co.uk/our-sustainability/"><img src="pictures/logoNTT1.jpg" alt="Sponsor 2"></a>
+                    <a href="https://www.theoia.co.uk/"><img src="pictures/logoNTT2.jpg" alt="Sponsor 3"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>

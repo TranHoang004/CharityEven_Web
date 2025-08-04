@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="participation_style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="pictures/Logo.png" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-details.html">Event Details</a></li>
+                    <li><a href="general-info.html">General Info</a></li>
+                    <li><a href="participation-info.html">Participation Info</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="visitor-form.html">Visitor Form</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="hero-image">
+                <h1>Join Us in Making a Difference</h1>
+            </div>
+    
+            <div class="content" id="events">
+                <h2>Choose Activity Events</h2>
+                <div class="section-container">
+                    <div class="section">
+                        <img src="pictures/5km run.jpg" alt="5km Run">
+                        <h3>5km Run</h3>
+                        <p>Open to all ages and skill levels. Participation fee: $20 per person.</p>
+                        <p>Prizes: Medals for top 3 finishers, participation certificates for all.</p>
+                        <button onclick="showForm('5km Run')">Register</button>
+                    </div>
+                    <div class="section">
+                        <img src="pictures/10kmrun.jpg" alt="10km Run">
+                        <h3>10km Run</h3>
+                        <p>Challenge for running enthusiasts. Participation fee: $30 per person.</p>
+                        <p>Prizes: Trophies for top 3 finishers, participation medals for all.</p>
+                        <button onclick="showForm('10km Run')">Register</button>
+                    </div>
+                    <div class="section">
+                        <img src="pictures/Familyrun.jpg" alt="Family Run">
+                        <h3>Family Run</h3>
+                        <p>Fun activity for the whole family. Participation fee: $50 per family.</p>
+                        <p>Prizes: Family gift packs for top 3 families, participation ribbons for all.</p>
+                        <button onclick="showForm('Family Run')">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container" id="registration-form">
+                <h2 style="color: #007BFF;">Event Registration Form</h2>
+                <form onsubmit="submitForm(event)">
+                    <!-- NAME -->
+                    <div class="form-group">
+                        <label for="visitor-first-name">Visitor's Name *</label>
+                        <input type="text" id="visitor-first-name" name="visitor-first-name" placeholder="First Name" required>
+                        <input type="text" id="visitor-last-name" name="visitor-last-name" placeholder="Last Name" required>
+                    </div>
+                    <!-- BIRTHDAY -->
+                    <div class="form-group">
+                        <label for="Your Birthday">Your Birthday: *</label>
+                        <input type="date" id="Your Birthday" name="Your Birthday" required>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="personal-email">Personal Email *</label>
+                        <input type="email" id="personal-email" name="personal-email" placeholder="example@example.com" required>
+                    </div>
+                    <!-- PHONE -->
+                    <div class="form-group">
+                        <label for="mobile-phone">Mobile Phone Number *</label>
+                        <div class="phone-input">
+                            <select id="country-code" name="country-code" required>
+                                <option value="" disabled selected>Please Select</option>
+                                <option value="+60">Malaysia (+60)</option>
+                                <option value="+62">Indonesia (+62)</option>
+                                <option value="+63">Philippines (+63)</option>
+                                <option value="+65">Singapore (+65)</option>
+                                <option value="+66">Thailand (+66)</option>
+                                <option value="+84">Vietnam (+84)</option>
+                                <option value="+855">Cambodia (+855)</option>
+                                <option value="+856">Laos (+856)</option>
+                                <option value="+951">Myanmar (+951)</option>
+                                <option value="+673">Brunei (+673)</option>
+                                <option value="+674">East Timor (+674)</option>
+                            </select>
+                            <input type="tel" id="mobile-phone" name="mobile-phone" placeholder="000-0000" required>
+                        </div>
+                    </div>
+                    <!-- EVENT -->
+                    <div class="form-group">
+                        <label for="event">Event *</label>
+                        <select id="event" name="event" required>
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="5km Run">5km Run</option>
+                            <option value="10km Run">10km Run</option>
+                            <option value="Family Run">Family Run</option>
+                        </select>
+                    </div>
+                    <!-- NOTES -->
+                    <div class="form-group">
+                        <label for="notes">Notes about the event</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Submit</button>
+                        <button type="button" class="cancel" onclick="hideForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="output" class="mt-4 p-4 bg-gray-200 rounded" style="display: none;">
+            </div>
+
+            <script src="script.js"></script>
+            <section id="event-info">
+                <div class="container">
+                    <h2>Here's everything you need to know</h2>
+                    <p>The Sport for Charity event will take place on Sunday, 11th October 2024 at the Exhibition and Convention Center (SECC), Ho Chi Minh City.</p>
+            
+                    <h3>1. Choose your activity</h3>
+                    <div class="activity">
+                        <h4>5km Run</h4>
+                        <p><strong>Criteria:</strong> Open to all ages and skill levels</p>
+                        <p><strong>Participation Fee:</strong> $20 per person</p>
+                        <p><strong>Prizes:</strong> Medals for top 3 finishers, participation certificates for all</p>
+                    </div>
+                    <div class="activity">
+                        <h4>10km Run</h4>
+                        <p><strong>Criteria:</strong> Challenge for running enthusiasts</p>
+                        <p><strong>Participation Fee:</strong> $30 per person</p>
+                        <p><strong>Prizes:</strong> Trophies for top 3 finishers, participation medals for all</p>
+                    </div>
+                    <div class="activity">
+                        <h4>Family Run</h4>
+                        <p><strong>Criteria:</strong> Fun activity for the whole family</p>
+                        <p><strong>Participation Fee:</strong> $50 per family</p>
+                        <p><strong>Prizes:</strong> Family gift packs for top 3 families, participation ribbons for all</p>
+                    </div>
+            
+                    <h3>2. Pick your training plan</h3>
+                    <p>Choose a training plan that suits your fitness level and goals. We've partnered with Coopah to provide you with professional training plans and resources.</p>
+                    <p>Visit <a href="https://coopah.com/download?shortlink=lm24website&c=lm24_website&pid=Event_Partners&af_xp=email&source_caller=ui" target="_blank">Coopah's website</a> to download their app and access tailored training plans for our Sport for Charity event.</p>
+            
+                    <h3>3. Set up your fundraising page</h3>
+                    <p>Create your fundraising page on our official platform. Share your story and motivate others to support your charitable cause.</p>
+            
+                    <h3>4. Get kitted out</h3>
+                    <p>Ensure you have the right gear for your chosen activity. We'll provide recommendations for appropriate running shoes and attire.</p>
+            
+                    <h3>5. Prepare for event day</h3>
+                    <p>Review the event schedule, arrive early, and familiarize yourself with the venue. Don't forget to bring your registration confirmation and any required documents.</p>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 style="color: black;">SPORT</h2>
+                <p>22BOIT02 Company - 2254030068 </p>
+                <p>Saigon Campus: 475A Dien Bien Phu, Ward 25, Binh Thanh District, HCMC</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><img src="pictures/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="pictures/instagram-icon.png" alt="Instagram"></a>
+                <button class="contact-button" onclick="location.href='about-us.html'">Contact Us</button>
+            </div>
+
+            <div class="footer-sponsors">
+                <h3>Our Sponsors</h3>
+                <div class="sponsor-logos1">
+                    <a href="https://www.timeoutdoors.com/"><img src="pictures/logoNTT.png" alt="Sponsor 1"></a>
+                    <a href="https://coopah.com/"><img src="pictures/logoNTT4.png" alt="Sponsor 4"></a>
+
+                    </div>
+                <div class="sponsor-logos">
+                    <a href="https://www.ans.co.uk/our-sustainability/"><img src="pictures/logoNTT1.jpg" alt="Sponsor 2"></a>
+                    <a href="https://www.theoia.co.uk/"><img src="pictures/logoNTT2.jpg" alt="Sponsor 3"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
